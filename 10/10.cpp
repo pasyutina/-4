@@ -4,13 +4,14 @@
 int main()
 {
     setlocale(0, "");
-    cout << "Введите число" << endl;
-    int number;
-    cin >> number;
-    cout << "\nТаблица умножения на " << number << ":";
-    for (int i = 0; i <= 10; i++) {
-        cout << "\n\t" << number << " x " << i << " = " << number * i;
+    int num;
+    cout << "Введите число: " ;
+    cin >> num;
+    cout << "\nТаблица умножения: " << endl;
+    for (int i = 0; i <= 10; i++)
+    {
+        cout << "\n\t" << num << " x " << i << " = " << num * i;
     }
     cout << endl;
-    system("pause");
+    return 0;
 }
